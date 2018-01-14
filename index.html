@@ -2,102 +2,214 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Volga Eclair</title>
-    <style>
-    .container-header {
-        height: 100vh;
-        color: #fff;
-        background-image: url(img/1000.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
-        }
-    </style>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.css" rel="stylesheet">
-    <!-- Project styles -->
-    <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style rel="stylesheet">
+
+        .pattern-1 {
+            background-attachment: fixed;
+        }
+
+        .view {
+            background: url(img/1000.jpg)no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .full-bg-img {
+            color: #fff;
+        }
+
+    </style>
 </head>
 
 <body>
     <!-- FLOAT BUTTON -->
-    <div class="downsticky-right text-center">
-        <a class="nav-link" href="#"><i class="fa fa-angle-double-up fa-2x"></i></a>
+    <div class="fixed-top m-3 floatInstagram">
+        <a class="" href=""><i class="fa fa-instagram fa-3x"></i></a>
     </div>
-    <div class="upsticky-left text-center">
-        <a class="nav-link" href="#"><i class="fa fa-instagram fa-3x"></i></a>
+    <div class="fixed-bottom d-flex justify-content-end m-3 floatUp">
+        <a class="" href=""><i class="fa fa-angle-double-up fa-3x"></i></a>
     </div>
-     <!-- /float button -->
-
-    <!-- HEAD PAGE -->
-    <div class="container-fluid container-header">
-        <div style="height: 100vh">
-            <div class="flex-center flex-column">
-                <!-- block for sm screens -->
-                <h1 class="display-3 animated fadeIn mb-2 text-center d-none d-sm-block">
-                    <strong>volga eclair
-                    </strong>
-                </h1>
-                <h2 class="animated fadeIn mb-3 text-center d-none d-sm-block">
-                    <strong>made for you<br>
-                    buy a rainbow of flavors now<br>
-                    or collect your one set
-                    </strong>
-                </h2>
-                <!-- /block for sm screens -->
-                <!-- look for sm screens -->
-                <h1 class="display-3 animated fadeIn mb-2 text-center d-block d-sm-none">
-                    <strong>volga eclair
-                    </strong>
-                </h1>
-                <h4 class="animated fadeIn mb-3 text-center d-block d-sm-none">
-                    <strong>made for you<br>
-                    buy a rainbow of flavors now<br>
-                    or collect your one set
-                    </strong>
-                </h4>
-                <!-- /look for sm screens -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-center">
-                            <a class="btn btn-rounded shades white" href="pageset.html"><strong class="darkgrey">BUY NOW</strong></a>
-                            <a class="btn btn-rounded btn-darkgrey" href="#products"><strong>COLLECT YOUR SET</strong></a>    
-                        </div>
-                    </div>
-                </div>
-            </div>
+ <!-- /float button -->
+    <!-- MASK -->
+    <div class="view hm-black-light">
+        <div class="full-bg-img flex-center pattern-1">
+            <ul>
+                <li>
+                    <h1 class="display-3 wow fadeInUp title"><strong>volga eclair</strong></h1>
+                </li>
+                <li>
+                    <h1 class="h1-responsive wow fadeInUp title">
+                        <strong>made for you<br>
+                                buy a rainbow of flavors now<br>
+                                or collect your one set
+                        </strong>
+                    </h1>
+                </li>
+                <li>
+                    <a class="btn btn-rounded shades white wow fadeInUp" href="pageset.html"><strong class="darkgrey">BUY NOW</strong></a>
+                    <a class="btn btn-rounded btn-darkgrey wow fadeInUp" href="#products"><strong>COLLECT YOUR SET</strong></a>
+                </li>
+            </ul>
         </div>
     </div>
-    <!-- /head page -->
-               
+    <!-- /Mask -->
     <!-- PRODUCTS -->
-    <div class="container my-5" id="products">
-        <section class="section pb-3">
-        <div class="row"> <!-- row first -->
+<div class="container my-5" id="products">
+    <section class="section pb-3">
+    <div class="row"> <!-- row first -->
+        <!-- FIRST SLIDE -->
+        <div class="col-md-3">
+            <!-- CARD -->
+            <div class="">
+                <!-- CARD IMG -->
+                <div class="hm-white-slight d-flex justify-content-center pt-1">
+                    <img src="img/1.jpg" class="img-fluid example z-depth-2" alt="">
+                </div>
+                <!-- /card img -->
+                <!-- CARD CONTENT -->
+                <div class="card-body text-center no-padding">
+                    <!-- TITL E-->
+                    <h5><strong>Eclair</strong></h5>
+                    <p class="card-text darkgrey">
+                        Hazelnut praline<br>
+                        and custard.
+                    </p>
+                    <!-- CARD FOOTER -->
+                        <span class="ml-1 mr-1"><strong>3 $</strong></span>
+                        <span class="">
+                            <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-shopping-cart"></i></a>
+                            <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-heart"></i></a>
+                        </span>
+                </div>
+                <!-- /card content -->
+            </div>
+            <!-- /card -->
+        </div>
+        <!-- /first slide  -->
+
+        <!-- SECOND SLIDE -->
+        <div class="col-md-3">
+            <!-- CARD -->
+            <div class="">
+                <!-- CARD IMG -->
+                <div class="hm-white-slight d-flex justify-content-center pt-1">
+                    <img src="img/2.jpg" class="img-fluid example z-depth-2" alt="">
+                </div>
+                <!-- /card img -->
+                <!-- CARD CONTENT -->
+                <div class="card-body text-center no-padding">
+                    <!-- TITLE -->
+                    <h5><strong>Eclair</strong></h5>
+                    <p class="card-text darkgrey">
+                    Strawberry<br>
+                    rose.
+                    </p>
+                    <!-- CARD FOOTER -->
+                        <span class="ml-1 mr-1"><strong>3 $</strong></span>
+                        <span class="">
+                            <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-shopping-cart"></i></a>
+                            <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-heart"></i></a>
+                        </span>
+                </div>
+                <!-- /card content -->
+            </div>
+            <!-- /card -->
+        </div>
+        <!-- /second slide  -->
+
+        <!-- THIRD SLIDE -->
+        <div class="col-md-3">
+            <!-- CARD -->
+            <div class="">
+                <!-- CARD IMG -->
+                <div class="hm-white-slight d-flex justify-content-center pt-1">
+                    <img src="img/3.jpg" class="img-fluid example z-depth-2" alt="">
+                </div>
+                <!-- /card img -->
+                <!-- CARD CONTENT -->
+                <div class="card-body text-center no-padding">
+                    <!--T ITLE -->
+                    <h5><strong>Eclair</strong></h5>
+                    <p class="card-text darkgrey">
+                    Chocolat<br>
+                    raspberry.
+                    </p>
+                    <!-- CARD FOOTER -->
+                        <span class="ml-1 mr-1">3 $</strong></span>
+                        <span class="">
+                            <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-shopping-cart"></i></a>
+                            <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-heart"></i></a>
+                        </span>
+                </div>
+                <!-- /card content -->
+            </div>
+            <!-- /card -->
+        </div>
+        <!-- /third slide  -->
+
+        <!-- FOURTH SLIDE -->
+        <div class="col-md-3">
+            <!-- CARD -->
+            <div class="">
+                <!-- CARD IMG -->
+                <div class="hm-white-slight d-flex justify-content-center pt-1">
+                    <img src="img/4.jpg" class="img-fluid example z-depth-2" alt="">
+                </div>
+                <!--/card img-->
+                <!-- CARD CONTENT -->
+                <div class="card-body text-center no-padding">
+                    <!-- TITLE -->
+                    <h5><strong>Eclair</strong></h5>
+                    <p class="card-text darkgrey">
+                    lingonberries<br>
+                    with cream.
+                    </p>
+                    <!-- CARD FOOTER -->
+                        <span class="ml-1 mr-1"><strong>3 $</strong></span>
+                        <span class="">
+                            <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-shopping-cart"></i></a>
+                            <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-heart"></i></a>
+                        </span>
+                </div>
+                <!-- /card content -->
+            </div>
+            <!-- /card -->
+        </div>
+        <!-- /fourth slide  -->
+    </div><!-- /row first -->
+
+    <div class="row"> <!-- row second -->
             <!-- FIRST SLIDE -->
             <div class="col-md-3">
                 <!-- CARD -->
                 <div class="">
                     <!-- CARD IMG -->
                     <div class="hm-white-slight d-flex justify-content-center pt-1">
-                        <img src="img/1.jpg" class="img-fluid example z-depth-2" alt="">
+                        <img src="img/5.jpg" class="img-fluid example z-depth-2" alt="">
                     </div>
                     <!-- /card img -->
                     <!-- CARD CONTENT -->
                     <div class="card-body text-center no-padding">
-                        <!-- TITL E-->
+                        <!-- TITLE -->
                         <h5><strong>Eclair</strong></h5>
                         <p class="card-text darkgrey">
-                            Hazelnut praline<br>
-                            and custard.
+                        Сoffee<br>
+                        and caramel.
                         </p>
                         <!-- CARD FOOTER -->
                             <span class="ml-1 mr-1"><strong>3 $</strong></span>
@@ -118,16 +230,16 @@
                 <div class="">
                     <!-- CARD IMG -->
                     <div class="hm-white-slight d-flex justify-content-center pt-1">
-                        <img src="img/2.jpg" class="img-fluid example z-depth-2" alt="">
+                        <img src="img/6.jpg" class="img-fluid example z-depth-2" alt="">
                     </div>
-                    <!-- /card img -->
+                    <!--/card img -->
                     <!-- CARD CONTENT -->
                     <div class="card-body text-center no-padding">
                         <!-- TITLE -->
                         <h5><strong>Eclair</strong></h5>
                         <p class="card-text darkgrey">
-                        Strawberry<br>
-                        rose.
+                        Anise<br>
+                        and cocoa.
                         </p>
                         <!-- CARD FOOTER -->
                             <span class="ml-1 mr-1"><strong>3 $</strong></span>
@@ -148,19 +260,19 @@
                 <div class="">
                     <!-- CARD IMG -->
                     <div class="hm-white-slight d-flex justify-content-center pt-1">
-                        <img src="img/3.jpg" class="img-fluid example z-depth-2" alt="">
+                        <img src="img/7.jpg" class="img-fluid example z-depth-2" alt="">
                     </div>
                     <!-- /card img -->
                     <!-- CARD CONTENT -->
                     <div class="card-body text-center no-padding">
-                        <!--T ITLE -->
+                        <!-- TITLE -->
                         <h5><strong>Eclair</strong></h5>
                         <p class="card-text darkgrey">
-                        Chocolat<br>
-                        raspberry.
+                        Caramel<br>
+                        and vanilla cream.
                         </p>
                         <!-- CARD FOOTER -->
-                            <span class="ml-1 mr-1">3 $</strong></span>
+                            <span class="ml-1 mr-1"><strong>3 $</strong></span>
                             <span class="">
                                 <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-shopping-cart"></i></a>
                                 <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-heart"></i></a>
@@ -178,16 +290,16 @@
                 <div class="">
                     <!-- CARD IMG -->
                     <div class="hm-white-slight d-flex justify-content-center pt-1">
-                        <img src="img/4.jpg" class="img-fluid example z-depth-2" alt="">
+                        <img src="img/8.jpg" class="img-fluid example z-depth-2" alt="">
                     </div>
-                    <!--/card img-->
+                    <!-- /card img -->
                     <!-- CARD CONTENT -->
                     <div class="card-body text-center no-padding">
                         <!-- TITLE -->
                         <h5><strong>Eclair</strong></h5>
                         <p class="card-text darkgrey">
-                        lingonberries<br>
-                        with cream.
+                        Salted<br>
+                        caramel.
                         </p>
                         <!-- CARD FOOTER -->
                             <span class="ml-1 mr-1"><strong>3 $</strong></span>
@@ -201,207 +313,89 @@
                 <!-- /card -->
             </div>
             <!-- /fourth slide  -->
-        </div><!-- /row first -->
+        </div><!-- /row second -->
+    </section>
+    <!-- BUTTON MAKE AN ORDER -->
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <a class="btn btn-rounded btn-darkgrey" href="pageyourset.html">
+                <strong class="">YOUR SET OF ECLAIRS HERE
+                </strong>
+            </a>
+        </div>
+    </div>
+    <!-- /button make an order -->
+</div>
+<!-- /products -->
 
-        <div class="row"> <!-- row second -->
-                <!-- FIRST SLIDE -->
-                <div class="col-md-3">
-                    <!-- CARD -->
-                    <div class="">
-                        <!-- CARD IMG -->
-                        <div class="hm-white-slight d-flex justify-content-center pt-1">
-                            <img src="img/5.jpg" class="img-fluid example z-depth-2" alt="">
-                        </div>
-                        <!-- /card img -->
-                        <!-- CARD CONTENT -->
-                        <div class="card-body text-center no-padding">
-                            <!-- TITLE -->
-                            <h5><strong>Eclair</strong></h5>
-                            <p class="card-text darkgrey">
-                            Сoffee<br>
-                            and caramel.
-                            </p>
-                            <!-- CARD FOOTER -->
-                                <span class="ml-1 mr-1"><strong>3 $</strong></span>
-                                <span class="">
-                                    <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-shopping-cart"></i></a>
-                                    <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-heart"></i></a>
-                                </span>
-                        </div>
-                        <!-- /card content -->
-                    </div>
-                    <!-- /card -->
-                </div>
-                <!-- /first slide  -->
-    
-                <!-- SECOND SLIDE -->
-                <div class="col-md-3">
-                    <!-- CARD -->
-                    <div class="">
-                        <!-- CARD IMG -->
-                        <div class="hm-white-slight d-flex justify-content-center pt-1">
-                            <img src="img/6.jpg" class="img-fluid example z-depth-2" alt="">
-                        </div>
-                        <!--/card img -->
-                        <!-- CARD CONTENT -->
-                        <div class="card-body text-center no-padding">
-                            <!-- TITLE -->
-                            <h5><strong>Eclair</strong></h5>
-                            <p class="card-text darkgrey">
-                            Anise<br>
-                            and cocoa.
-                            </p>
-                            <!-- CARD FOOTER -->
-                                <span class="ml-1 mr-1"><strong>3 $</strong></span>
-                                <span class="">
-                                    <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-shopping-cart"></i></a>
-                                    <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-heart"></i></a>
-                                </span>
-                        </div>
-                        <!-- /card content -->
-                    </div>
-                    <!-- /card -->
-                </div>
-                <!-- /second slide  -->
-    
-                <!-- THIRD SLIDE -->
-                <div class="col-md-3">
-                    <!-- CARD -->
-                    <div class="">
-                        <!-- CARD IMG -->
-                        <div class="hm-white-slight d-flex justify-content-center pt-1">
-                            <img src="img/7.jpg" class="img-fluid example z-depth-2" alt="">
-                        </div>
-                        <!-- /card img -->
-                        <!-- CARD CONTENT -->
-                        <div class="card-body text-center no-padding">
-                            <!-- TITLE -->
-                            <h5><strong>Eclair</strong></h5>
-                            <p class="card-text darkgrey">
-                            Caramel<br>
-                            and vanilla cream.
-                            </p>
-                            <!-- CARD FOOTER -->
-                                <span class="ml-1 mr-1"><strong>3 $</strong></span>
-                                <span class="">
-                                    <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-shopping-cart"></i></a>
-                                    <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-heart"></i></a>
-                                </span>
-                        </div>
-                        <!-- /card content -->
-                    </div>
-                    <!-- /card -->
-                </div>
-                <!-- /third slide  -->
-    
-                <!-- FOURTH SLIDE -->
-                <div class="col-md-3">
-                    <!-- CARD -->
-                    <div class="">
-                        <!-- CARD IMG -->
-                        <div class="hm-white-slight d-flex justify-content-center pt-1">
-                            <img src="img/8.jpg" class="img-fluid example z-depth-2" alt="">
-                        </div>
-                        <!-- /card img -->
-                        <!-- CARD CONTENT -->
-                        <div class="card-body text-center no-padding">
-                            <!-- TITLE -->
-                            <h5><strong>Eclair</strong></h5>
-                            <p class="card-text darkgrey">
-                            Salted<br>
-                            caramel.
-                            </p>
-                            <!-- CARD FOOTER -->
-                                <span class="ml-1 mr-1"><strong>3 $</strong></span>
-                                <span class="">
-                                    <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-shopping-cart"></i></a>
-                                    <a class="ml-1 mr-1" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-heart"></i></a>
-                                </span>
-                        </div>
-                        <!-- /card content -->
-                    </div>
-                    <!-- /card -->
-                </div>
-                <!-- /fourth slide  -->
-            </div><!-- /row second -->
-        </section>  
-        <!-- BUTTON MAKE AN ORDER -->
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <a class="btn btn-rounded btn-darkgrey" href="pageyourset.html">
-                    <strong class="">YOUR SET OF ECLAIRS HERE
-                    </strong>
+<!-- ABOUT AS -->
+<div class="container-fluid lightgreyback mt-5">
+    <div class="row">
+        <div class="col m-5 text-center">
+           <p><em>... sweets can be assessed fully only on a full stomach,<br>
+                  when the sugar-honey is delicious not satisfy a pressing need,<br>
+                   and sweetens our sky the benevolence of life.
+            </em></p>
+            <br>
+            <p><strong>Muriel Barbery</strong> TREAT</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col text-center">
+           <h3><strong>
+                we are open for cooperation<br>
+                call us<br>
+                or write to us
+                </strong>
+            </h3>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col text-center">
+            <div class="text-center">
+                <button type="button" class="btn btn-rounded shades white m-2"><strong class="darkgrey">+0 000 000 00 00</strong></button>
+                <button type="button" class="btn btn-rounded btn-darkgrey m-2"><strong>volgaeklair@ve.com</strong></button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col text-center">
+            <div class="text-center">
+                <a class="btn btn-rounded btn-yellow" href="#products"><strong class="darkgrey">back to shop</strong></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /about as -->
+
+<!-- FOOTER -->
+<div class="container-fluid darkback mt-5">
+    <div class="row">
+        <div class="col text-center mt-5 mb-5 pl-5">
+            <p class="text-md-left white-text">©
+                <a href="https://www.SashaGoldman.com" class="white-text"><strong> SashaGoldman.com</strong>
                 </a>
-            </div>
-        </div> 
-        <!-- /button make an order -->    
+            </p>
+        </div>
     </div>
-    <!-- /products -->
+</div>
+<!-- /footer -->
 
-    <!-- ABOUT AS -->
-    <div class="container-fluid lightgreyback mt-5">
-        <div class="row">
-            <div class="col m-5 text-center">
-               <p><em>... sweets can be assessed fully only on a full stomach,<br>
-                      when the sugar-honey is delicious not satisfy a pressing need,<br>
-                       and sweetens our sky the benevolence of life.
-                </em></p>
-                <br>
-                <p><strong>Muriel Barbery</strong> TREAT</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row mt-5">
-            <div class="col text-center">
-               <h3><strong>
-                    we are open for cooperation<br> 
-                    call us<br>
-                    or write to us
-                    </strong>
-                </h3>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col text-center">
-                <div class="text-center">
-                    <button type="button" class="btn btn-rounded shades white m-2"><strong class="darkgrey">+0 000 000 00 00</strong></button>
-                    <button type="button" class="btn btn-rounded btn-darkgrey m-2"><strong>volgaeklair@ve.com</strong></button>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col text-center">
-                <div class="text-center">
-                    <a class="btn btn-rounded btn-yellow" href="#products"><strong class="darkgrey">back to shop</strong></a>
-                </div>
-            </div>
-        </div>
-    </div>  
-    <!-- /about as -->
-
-    <!-- FOOTER -->
-    <div class="container-fluid darkback mt-5">
-        <div class="row">
-            <div class="col text-center mt-5 mb-5 pl-5">
-                <p class="text-md-left white-text">©  
-                    <a href="https://www.SashaGoldman.com" class="white-text"><strong> SashaGoldman.com</strong>
-                    </a>
-                </p>
-            </div>
-        </div>       
-    </div>
-    <!-- /footer -->
-   
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
+    <!-- Bootstrap dropdown -->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
