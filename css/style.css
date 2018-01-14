@@ -1,9 +1,40 @@
 
-h1,
-h2,
-h4 {
-    text-shadow:#263238 0 0 3px;
+.floatInstagram > a > i {
+  color: #ff4444;
+  text-shadow: 0 2px 5px  rgba(0, 0, 0, 0.16), 0 2px 10px  rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; }
+  .floatInstagram:hover, .floatInstagram:focus, .floatInstagram:focus {
+    color: #ff4444;
 }
+
+.floatUp > a > i {
+  color: #879a9f;
+  text-shadow: 0 2px 5px  rgba(0, 0, 0, 0.16), 0 2px 10px  rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; }
+  .floatUp:hover, .floatUp:focus, .floatUp:focus {
+    color: #879a9f;
+}
+
+.fa-heart {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; }
+  .fa-heart:hover, .fa-heart:focus, .fa-heart:focus {
+    color: #ff4444;
+}
+
+.fa-shopping-cart:active {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; }
+  .fa-shopping-cart:hover, .fa-shopping-cart:focus, .fa-shopping-cart:focus {
+    color: #ffeb3b;
+}
+
+
+
 
 .darkgrey {
     color: #879a9f;
@@ -22,15 +53,6 @@ h4 {
     text-shadow: 0 2px 5px  rgba(0, 0, 0, 0.16), 0 2px 10px  rgba(0, 0, 0, 0.12);
 }
 
-.fa-angle-double-up.fa-2x {
-    color: #879a9f;
-    text-shadow: 0 2px 5px  rgba(0, 0, 0, 0.16), 0 2px 10px  rgba(0, 0, 0, 0.12);
-}
-
-.fa-instagram.fa-3x {
-    color: #ff4444;
-    text-shadow: 0 2px 5px  rgba(0, 0, 0, 0.16), 0 2px 10px  rgba(0, 0, 0, 0.12);
-}
 
 .lightgreyback {
     background: #f3f4f6;
@@ -50,28 +72,4 @@ h4 {
 
 .btn-yellow {
     background: #ffeb3b;
-}
-
-.fa-heart:active {
-    color: #ff4444;
-}
-
-.fa-shopping-cart:active {
-    color: #ffeb3b;
-}
-
-.downsticky-right {
-    display: block;
-    position: fixed;
-    top: 85%;
-    right: 0.5em;
-    z-index:99999;
-}
-
-.upsticky-left {
-    display: block;
-    position: fixed;
-    top: 3%;
-    left: 0.5em;
-    z-index:99999;
 }
